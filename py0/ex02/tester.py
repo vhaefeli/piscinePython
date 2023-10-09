@@ -1,4 +1,4 @@
-#! /Users/vhaefeli/.brew/bin python3.11
+#! /usr/bin/env python3
 
 from find_ft_type import all_thing_is_obj
 
