@@ -15,5 +15,5 @@ def all_thing_is_obj(object: any) -> int:
         case ("<class 'str'>"):
             print("Brian is in the kitchen : <class 'str'>")
         case _:
-          print("Type not found")
+            print("Type not found")
     return 42

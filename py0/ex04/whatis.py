@@ -7,7 +7,7 @@ if __name__ == "__main__":
         assert len(sys.argv) <= 2, "more than one argument is provided"
         if len(sys.argv) < 2:
             sys.exit(0)
-        assert sys.argv[1].isdigit(), "argument is not an integer"
+        assert sys.argv[1].lstrip('-').isdigit(), "argument is not an integer"
         nb = int(sys.argv[1])
         if nb % 2:
             print("I'm Odd.")
@@ -15,3 +15,4 @@ if __name__ == "__main__":
             print("I'm Even.")
     except AssertionError as msg:
         print("AssertionError: " + str(msg))
+ 
